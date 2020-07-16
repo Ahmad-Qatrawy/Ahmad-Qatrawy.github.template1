@@ -1,0 +1,105 @@
+/*
+
+    1- Common Styles
+    2- General Styles
+    3- Sections
+        3.0 Header Section
+        3.1 Home Section 
+        3.2 About Section 
+        3.3 Portfolio Section
+        3.4 Service Section
+        3.5 Prices Section 
+        3.6 Team Section
+        3.7 Blog Page Section
+        3.8 Contact Section
+        3.9 Footer Section
+
+*/
+
+
+
+
+    /* 
+        - Overly
+        - Opacity hover
+        - Section header 
+        - Section Padding
+        - hover effect 1 ( left to right )
+        - hover effect 2 ( top to bottom )
+    
+    */
+
+    
+
+
+/* 1- Common Styles */ 
+
+.overly {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hover-opacity {transition: opacity 0.5s;}
+.hover-opacity:hover {opacity: 0.8;}
+.section-header {text-align: center;}
+
+.section-header .section-title {font-size: 35px;}
+
+.section-header .line {
+    width: 60px;
+    height: 5px;
+    background-color: var(--maincolor);
+    display: block;
+    margin: 0 auto 70px auto;
+}
+
+.pd-y {padding: 120px 0;}
+
+.ltr-effect, .tb-effect {position: relative;}
+.ltr-effect:after, .tb-effect:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    z-index: -1;
+}
+
+
+.tb-effect:after {transition: height 0.5s; height: 0;}
+.ltr-effect:after{transition: width 0.5s; width: 0;}
+
+.ltr-effect:hover:after {width: 100%;}
+.tb-effect:hover:after {height: 100%;}
+
+
+/* 2- General Css Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}   
+
+:root {
+    --maincolor : #6195ff;
+    --whitecolor : #fff;
+    --graycolor : #999;
+    --bg-gray : #f9f9f9
+}
+
+.container {width: 80%;margin: auto;}
+.clear {clear: both;}
+h1, h2, h3, h4, h5, h6 {font-family: montserrat;}
+body {font-family: 'Varela Round', sans-serif;}
+button {font-family: inherit;}
+a {text-decoration: none;}
+ul {list-style-type: none;}
+    
