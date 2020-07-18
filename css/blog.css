@@ -34,18 +34,3 @@
 
         .blog-link {color: var(--maincolor);}
 
-        .blog-desc2 {
-            color: var(--graycolor);
-            line-height: 1.5;
-            opacity: 0;
-            display: none; 
-            transition: opacity 1s;
-        }
-
-
-        .blog-info:active .blog-desc2 {
-            display: block;
-            opacity: 1;
-        }
-
-
